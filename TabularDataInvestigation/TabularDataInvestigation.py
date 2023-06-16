@@ -2,6 +2,8 @@ import pandas as pd
 import numpy as np
 
 class TDI:
+    def __init__(self):
+        pass
     def find_index_for_null_values(df, return_type = 'dataframe'):
         response = pd.DataFrame()
         for col in df.columns:
