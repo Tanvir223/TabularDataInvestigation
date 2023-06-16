@@ -6,7 +6,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 setuptools.setup(
     name='TabularDataInvestigation',
     packages=['TabularDataInvestigation'],
-    version='0.0.1',
+    version='0.0.2',
     license='MIT',
     description='This package provide a fast tabular data investigation and it will eligible for ML model building and also helps to developers in their projects when needed ',
     long_description=long_description,
