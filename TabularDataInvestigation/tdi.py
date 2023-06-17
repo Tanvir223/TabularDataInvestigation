@@ -113,7 +113,7 @@ def duplicate_columns(df):
 
 def correlated_columns(df, return_type='dataframe'):
     risk_variable_df = pd.DataFrame()
-    correalated_df = df.corr()
+    correalated_df = df.corr(numeric_only=True)
     correalated_df.reset_index(inplace=True)
     lst_leakage_cols = []
     lst_leakage_value = []

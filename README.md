@@ -1,15 +1,3 @@
----
-jupyter:
-  colab:
-  kernelspec:
-    display_name: Python 3
-    name: python3
-  language_info:
-    name: python
-  nbformat: 4
-  nbformat_minor: 0
----
-
 <div class="cell markdown" id="lJNrv9lwHw7t">
 
 **This package provide a fast tabular data investigation and it will
@@ -578,9 +566,4 @@ Here return type is optional ('dataframe' or 'json'). Default: dataframe
 
 </div>
 
-<div class="cell code" id="6uyQ5pVcS5VG">
 
-``` python
-```
-
-</div>
