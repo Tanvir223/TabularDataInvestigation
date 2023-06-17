@@ -85,7 +85,7 @@ def check_col_with_one_category(df, return_type = 'dataframe'):
     
 def find_special_char_index(df, return_type = 'dataframe'):
     # define a regular expression pattern that matches any special character
-    pattern = r'[^a-zA-Z0-9]'
+    pattern = r'[^a-zA-Z0-9\s.]'
     response = pd.DataFrame(columns = ['columns', 'has_special_char_at'])
 
     for col in df.columns:
