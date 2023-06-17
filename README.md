@@ -37,10 +37,10 @@ from TabularDataInvestigation import tdi
 
 <div class="cell markdown" id="5o29-lUSKmIy">
 
-**tdi.find_index_for_null_values(df, return_type='dataframe')
-Parameters:
-df: pandas Dataframe
-return_type(optional): Default = 'dataframe'**
+**tdi.find_index_for_null_values(df, return_type='dataframe')\
+&nbsp;Parameters:\
+&nbsp;&nbsp;df: pandas Dataframe\
+&nbsp;&nbsp;return_type(optional): Default = 'dataframe'**
 
 </div>
 
@@ -116,10 +116,10 @@ Here return type is optional ('dataframe' or 'json'). Default: dataframe
 
 <div class="cell markdown" id="OSAs6sHgLVf3">
 
-**tdi.check_error_data_types(df, return_type='dataframe')
-Parameters:
-df: pandas Dataframe
-return_type(optional): Default = 'dataframe')**
+**tdi.check_error_data_types(df, return_type='dataframe')\
+&nbsp;Parameters:\
+&nbsp;&nbsp;df: pandas Dataframe\
+&nbsp;&nbsp;return_type(optional): Default = 'dataframe')**
 
 </div>
 
@@ -195,11 +195,12 @@ Here return type is optional ('dataframe' or 'json'). Default: dataframe
 
 <div class="cell markdown" id="IwI-sfT4MsLG">
 
-**tdi.check_num_of_min_category(df, return_type='dataframe') Parameters:
-df: pandas Dataframe
-minimum_threshold : this define the minimum count of a
-category(Default=3)
-return_type(optional):how want to get the output (Default =
+**tdi.check_num_of_min_category(df, return_type='dataframe')\
+&nbsp;Parameters:\
+&nbsp;&nbsp;df: pandas Dataframe\
+&nbsp;&nbsp;minimum_threshold : this define the minimum count of a
+category(Default=3)\
+&nbsp;&nbsp;return_type(optional):how want to get the output (Default =
 'dataframe')**
 
 </div>
@@ -268,10 +269,10 @@ Here return type is optional ('dataframe' or 'json'). Default: dataframe
 
 <div class="cell markdown" id="gXIXp6XBN7NM">
 
-**tdi.check_col_with_one_category(df, return_type='dataframe')
-Parameters:
-df: pandas Dataframe
-return_type(optional):how want to get the output (Default =
+**tdi.check_col_with_one_category(df, return_type='dataframe')\
+&nbsp;Parameters:\
+&nbsp;&nbsp;df: pandas Dataframe\
+&nbsp;&nbsp;return_type(optional):how want to get the output (Default =
 'dataframe')**
 
 </div>
@@ -348,10 +349,10 @@ Here return type is optional ('dataframe' or 'json'). Default: dataframe
 
 <div class="cell markdown" id="zal9tBcxPH5B">
 
-**tdi.find_special_char_index(df, return_type='dataframe')
-Parameters:
-df: pandas Dataframe
-return_type(optional):how want to get the output (Default =
+**tdi.find_special_char_index(df, return_type='dataframe')\
+&nbsp;Parameters:\
+&nbsp;&nbsp;df: pandas Dataframe\
+&nbsp;&nbsp;return_type(optional):how want to get the output (Default =
 'dataframe')**
 
 </div>
@@ -428,9 +429,9 @@ Here return type is optional ('dataframe' or 'json'). Default: dataframe
 
 <div class="cell markdown" id="78DYtKBjQFDA">
 
-**tdi.duplicate_columns(df)
-Parameters:
-df: pandas Dataframe**
+**tdi.duplicate_columns(df)\
+&nbsp;Parameters:\
+&nbsp;&nbsp;df: pandas Dataframe**
 
 </div>
 
@@ -486,10 +487,10 @@ So here 'A' and 'C' columns contain the same data
 
 <div class="cell markdown" id="_tH4YAE-SIKl">
 
-**tdi.correlated_columns(df, return_type='dataframe')
-Parameters:
-df: pandas Dataframe
-return_type(optional):how want to get the output (Default =
+**tdi.correlated_columns(df, return_type='dataframe')\
+&nbsp;Parameters:\
+&nbsp;&nbsp;df: pandas Dataframe\
+&nbsp;&nbsp;return_type(optional):how want to get the output (Default =
 'dataframe')**
 
 </div>
