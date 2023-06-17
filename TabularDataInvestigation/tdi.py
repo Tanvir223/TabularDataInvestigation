@@ -32,9 +32,9 @@ def check_error_data_types(df, return_type = 'dataframe'):
         if len(temp_df_changed_type.select_dtypes(include='number').columns) > 0:
             indexes_of_errors = temp_df_changed_type.select_dtypes(exclude='number').columns
 
-        if len(np.unique(temp_df[indexes_of_errors].values)) <= (select_one_col_values.nunique() / 3):
-            error_data = np.unique(temp_df[indexes_of_errors].values)
-            response.loc[col] = [col, error_data, indexes_of_errors.values]
+            if len(np.unique(temp_df[indexes_of_errors].values)) <= (select_one_col_values.nunique() / 3):
+                error_data = np.unique(temp_df[indexes_of_errors].values)
+                response.loc[col] = [col, error_data, indexes_of_errors.values]
 
 
 
