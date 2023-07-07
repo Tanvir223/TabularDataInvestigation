@@ -1,9 +1,6 @@
 <div class="cell markdown" id="lJNrv9lwHw7t">
 
-**This package provide a fast tabular data investigation and it will
-eligible for ML model building and also helps to developers in their
-projects when needed. Most of the functions return a dataframe or json
-as output**
+## This package provide a fast tabular data investigation and it will eligible for ML model building and also helps to developers in their projects when needed. Most of the functions return a dataframe or json as output
 
 </div>
 
@@ -15,7 +12,7 @@ pip install TabularDataInvestigation
 
 </div>
 
-<div class="cell code" execution_count="43" id="VzC1_y2hTSlb">
+<div class="cell code" id="VzC1_y2hTSlb">
 
 ``` python
 from TabularDataInvestigation import tdi
@@ -25,23 +22,31 @@ from TabularDataInvestigation import tdi
 
 <div class="cell markdown" id="5o29-lUSKmIy">
 
-**tdi.find_index_for_null_values(df, return_type='dataframe')\
-&nbsp;Parameters:\
-&nbsp;&nbsp;df: pandas Dataframe\
-&nbsp;&nbsp;return_type(optional): Default = 'dataframe'**
+# tdi.find_index_for_null_values(df, return_type='dataframe')
+
+**Parameters (Input):**
+
+-   df: pandas Dataframe
+-   return_type(optional): Default = 'dataframe'
+
+</div>
+
+<div class="cell markdown" id="ZxDbq_gbf3fM">
+
+**Output : DataFrame**
 
 </div>
 
 <div class="cell markdown" id="vYvrNlAvIDQd">
 
-Some we need to delete or fill the null values each cell specifically
-with different methods. some data has meaning and some are unnecceesary.
-so using this function we can get all the missing column indexes that we
-can use in our project.
+Sometimes, we need to drop or fill the null values according to
+individual cell specifically with different methods. Some data contains
+meaning and some are unnecceesary.So, using this function we can get all
+the missing cell indexes that we can use in our project.
 
 </div>
 
-<div class="cell code" execution_count="19"
+<div class="cell code"
 colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:143}"
 id="TGS5k7JWIqz8" outputId="3663fd25-23cb-4558-a175-5ede1691661d">
 
@@ -61,7 +66,7 @@ df
 
 </div>
 
-<div class="cell code" execution_count="20"
+<div class="cell code"
 colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:81}"
 id="HLVms92Zn4qW" outputId="669872b8-bce7-456b-afae-37dca420cc49">
 
@@ -78,7 +83,7 @@ tdi.find_index_for_null_values(df)
 
 </div>
 
-<div class="cell code" execution_count="21"
+<div class="cell code"
 colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:35}"
 id="8_NmdR_UKRWy" outputId="b650a6f9-2f2b-49f8-a3e0-e575a1d74df0">
 
@@ -98,28 +103,39 @@ tdi.find_index_for_null_values(df, return_type='json')
 
 <div class="cell markdown" id="d9uRAKLzKYDy">
 
-Here return type is optional ('dataframe' or 'json'). Default: dataframe
+Here return type is optional ('dataframe' or 'json'). Default:
+dataframe. From the output we understand that column "A" Index "1" has a
+null value.
 
 </div>
 
 <div class="cell markdown" id="OSAs6sHgLVf3">
 
-**tdi.check_error_data_types(df, return_type='dataframe')\
-&nbsp;Parameters:\
-&nbsp;&nbsp;df: pandas Dataframe\
-&nbsp;&nbsp;return_type(optional): Default = 'dataframe')**
+# tdi.check_error_data_types(df, return_type='dataframe')
+
+**Parameters(Input):**
+
+-   df: pandas Dataframe
+-   return_type(optional): Default = 'dataframe')
+
+</div>
+
+<div class="cell markdown" id="jTm7bE7mgP1k">
+
+**Output : DataFrame**
 
 </div>
 
 <div class="cell markdown" id="OpKOTMPmLl5w">
 
-We usually face some unusual behave in the dataframe. Sometimes we are
-seeing there is a numeric type column but after checking it shows object
-or string type column. So this function will find the cuase.
+We usually face some unusual behave in the dataframe for data type
+issue. Sometimes we are seeing there is a numeric type column but after
+checking it shows object or string type column for error in the data. So
+this function will find the cuase in the dataframe.
 
 </div>
 
-<div class="cell code" execution_count="25"
+<div class="cell code"
 colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:143}"
 id="WQAv7nOpLktf" outputId="599eb053-4f53-4857-a2a0-52c1c68fc8d3">
 
@@ -139,7 +155,7 @@ df
 
 </div>
 
-<div class="cell code" execution_count="26"
+<div class="cell code"
 colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:112}"
 id="S8gaMAASbZc4" outputId="0325075a-93e6-4347-bbfc-823e74021772">
 
@@ -157,7 +173,7 @@ tdi.check_error_data_types(df)
 
 </div>
 
-<div class="cell code" execution_count="27"
+<div class="cell code"
 colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:35}"
 id="RcCmVNZAMgkH" outputId="4c6315d7-6fd3-4a87-9ef2-4116f47b4401">
 
@@ -177,23 +193,33 @@ tdi.check_error_data_types(df, return_type='json')
 
 <div class="cell markdown" id="NSjujMp0Mqv1">
 
-Here return type is optional ('dataframe' or 'json'). Default: dataframe
+Here return type is optional ('dataframe' or 'json'). Default:
+dataframe. Above output defines that column `"A"` have error data value
+`"a"` and which index is `"1"`
 
 </div>
 
 <div class="cell markdown" id="IwI-sfT4MsLG">
 
-**tdi.check_num_of_min_category(df, return_type='dataframe')\
-&nbsp;Parameters:\
-&nbsp;&nbsp;df: pandas Dataframe\
-&nbsp;&nbsp;minimum_threshold : this define the minimum count of a
-category(Default=3)\
-&nbsp;&nbsp;return_type(optional):how want to get the output (Default =
-'dataframe')**
+# tdi.check_num_of_min_category(df, return_type='dataframe')
+
+**Parameters (Input):**
+
+-   df: pandas Dataframe
+-   minimum_threshold : this define the minimum count of a
+    category(Default=3)
+-   return_type(optional):how want to get the output (Default =
+    'dataframe')
 
 </div>
 
-<div class="cell code" execution_count="28"
+<div class="cell markdown" id="nQZU9yJAhqOg">
+
+**Output : DataFrame**
+
+</div>
+
+<div class="cell code"
 colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:175}"
 id="eM1XHOiOM1Fd" outputId="4b9d38f4-fe36-4b69-e47c-971529b56d69">
 
@@ -214,7 +240,7 @@ df
 
 </div>
 
-<div class="cell code" execution_count="29"
+<div class="cell code"
 colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:81}"
 id="EwgrDhQ4C0fj" outputId="7adb6b4a-e039-46f5-9273-93e4299faf54">
 
@@ -231,7 +257,7 @@ tdi.check_num_of_min_category(df, minimum_threshold=1)
 
 </div>
 
-<div class="cell code" execution_count="30"
+<div class="cell code"
 colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:35}"
 id="zNg1D-hZNwhF" outputId="c4f3bef9-1796-499d-927c-ab572ab08c51">
 
@@ -251,17 +277,27 @@ tdi.check_num_of_min_category(df, minimum_threshold=1, return_type='json')
 
 <div class="cell markdown" id="FpWRMlBINw0M">
 
-Here return type is optional ('dataframe' or 'json'). Default: dataframe
+Here return type is optional ('dataframe' or 'json'). Default:
+dataframe. Above output defines that column "B" have fewer categories
+because we set the minimum threshold is "1" and which index is "2"
 
 </div>
 
 <div class="cell markdown" id="gXIXp6XBN7NM">
 
-**tdi.check_col_with_one_category(df, return_type='dataframe')\
-&nbsp;Parameters:\
-&nbsp;&nbsp;df: pandas Dataframe\
-&nbsp;&nbsp;return_type(optional):how want to get the output (Default =
-'dataframe')**
+# tdi.check_col_with_one_category(df, return_type='dataframe')
+
+**Parameters (Input):**
+
+-   df: pandas Dataframe
+-   return_type(optional):how want to get the output (Default =
+    'dataframe')
+
+</div>
+
+<div class="cell markdown" id="5yE89DndjHNl">
+
+**Output : DataFrame**
 
 </div>
 
@@ -273,7 +309,7 @@ those column(s)
 
 </div>
 
-<div class="cell code" execution_count="31"
+<div class="cell code"
 colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:175}"
 id="GOO1rwMHN6c0" outputId="288a9482-0ac7-437b-f248-67f5021c8753">
 
@@ -294,7 +330,7 @@ df
 
 </div>
 
-<div class="cell code" execution_count="32"
+<div class="cell code"
 colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:81}"
 id="R_dXOEClEBKg" outputId="c10cbf14-cb6c-49fc-82a6-e37fdd3c4787">
 
@@ -311,7 +347,7 @@ tdi.check_col_with_one_category(df)
 
 </div>
 
-<div class="cell code" execution_count="33"
+<div class="cell code"
 colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:35}"
 id="m2Fz5iqlO9nM" outputId="1cbbf8e0-c640-47bc-ae60-1a16ef866c60">
 
@@ -331,28 +367,38 @@ tdi.check_col_with_one_category(df,return_type='json')
 
 <div class="cell markdown" id="uR3g6QQIPFRh">
 
-Here return type is optional ('dataframe' or 'json'). Default: dataframe
+Here return type is optional ('dataframe' or 'json'). Default:
+dataframe. Above output defines that column "B" has one category only
+which category value is "x"
 
 </div>
 
 <div class="cell markdown" id="zal9tBcxPH5B">
 
-**tdi.find_special_char_index(df, return_type='dataframe')\
-&nbsp;Parameters:\
-&nbsp;&nbsp;df: pandas Dataframe\
-&nbsp;&nbsp;return_type(optional):how want to get the output (Default =
-'dataframe')**
+# tdi.find_special_char_index(df, return_type='dataframe')
+
+**Parameters (Input):**
+
+-   df: pandas Dataframe
+-   return_type(optional):how want to get the output (Default =
+    'dataframe')
+
+</div>
+
+<div class="cell markdown" id="IzRE_G_3jwN1">
+
+**Output : DataFrame**
 
 </div>
 
 <div class="cell markdown" id="BujDuVwXPRrg">
 
-This function will find out for us those indexes which holding the
+This function will find out for us those indexes which contain the
 double spaces and special characters into the dataframe.
 
 </div>
 
-<div class="cell code" execution_count="34"
+<div class="cell code"
 colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:143}"
 id="WzJTJwX3O9vR" outputId="3f85f568-b4ad-4a2c-a3d2-8fa68a9099e2">
 
@@ -372,7 +418,7 @@ df
 
 </div>
 
-<div class="cell code" execution_count="35"
+<div class="cell code"
 colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:143}"
 id="OhApZcUnENOd" outputId="934cef2f-027e-44b0-f5e8-574664df530a">
 
@@ -391,7 +437,7 @@ tdi.find_special_char_index(df)
 
 </div>
 
-<div class="cell code" execution_count="36"
+<div class="cell code"
 colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:53}"
 id="BpYx5OUJP6TR" outputId="a4ba4445-0265-4826-a059-b7103b62b763">
 
@@ -411,26 +457,38 @@ tdi.find_special_char_index(df, return_type='json')
 
 <div class="cell markdown" id="CBfT0D9sP6ho">
 
-Here return type is optional ('dataframe' or 'json'). Default: dataframe
+Here return type is optional ('dataframe' or 'json'). Default:
+dataframe. Above output dataframe defines that column "B" have special
+characters which indexes are \[0,2\] and column "C" has also special
+character which index is \[2\]
 
 </div>
 
 <div class="cell markdown" id="78DYtKBjQFDA">
 
-**tdi.duplicate_columns(df)\
-&nbsp;Parameters:\
-&nbsp;&nbsp;df: pandas Dataframe**
+# tdi.duplicate_columns(df)
+
+**Parameters (Input):**
+
+-   df: pandas Dataframe
+
+</div>
+
+<div class="cell markdown" id="qMMBY5Kuk73j">
+
+**Output : List**
 
 </div>
 
 <div class="cell markdown" id="rKojcLDDQXC4">
 
-This function return a list of column names those containg the same
-value column name may different but data is same
+This function returns a list of column names those containing the same
+value. Also, handle the case that the column name may different but data
+is same
 
 </div>
 
-<div class="cell code" execution_count="37"
+<div class="cell code"
 colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:143}"
 id="h3KeKIY6Q1Hn" outputId="e6dd6b1d-eade-4120-ce55-ae9a5bc92896">
 
@@ -450,7 +508,7 @@ df
 
 </div>
 
-<div class="cell code" execution_count="38"
+<div class="cell code"
 colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
 id="oLt8h-ksEQCf" outputId="93387b3e-d8d1-4df3-8071-4884039a9575">
 
@@ -475,22 +533,30 @@ So here 'A' and 'C' columns contain the same data
 
 <div class="cell markdown" id="_tH4YAE-SIKl">
 
-**tdi.correlated_columns(df, return_type='dataframe')\
-&nbsp;Parameters:\
-&nbsp;&nbsp;df: pandas Dataframe\
-&nbsp;&nbsp;return_type(optional):how want to get the output (Default =
-'dataframe')**
+# tdi.correlated_columns(df, return_type='dataframe')
+
+**Parameters (Input):**
+
+-   df: pandas Dataframe
+-   return_type(optional):how want to get the output (Default =
+    'dataframe')
+
+</div>
+
+<div class="cell markdown" id="HjHMEZB6lNoC">
+
+**Output : DataFrame**
 
 </div>
 
 <div class="cell markdown" id="9QYFkYRQSQb-">
 
 This function will return a dataframe or json which will define that
-different column but the data is more than 90% correlated
+different column but the data is more than 90% correlated.
 
 </div>
 
-<div class="cell code" execution_count="40"
+<div class="cell code"
 colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:143}"
 id="qTs0jpchFPHD" outputId="e49b0c80-9db3-478d-d2f0-301cb27b9c75">
 
@@ -510,7 +576,7 @@ df
 
 </div>
 
-<div class="cell code" execution_count="41"
+<div class="cell code"
 colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:167}"
 id="zwpXXkFPFAFH" outputId="34fe3c23-24ed-41ea-b0b6-888c1449cd73">
 
@@ -535,7 +601,7 @@ tdi.correlated_columns(df, return_type='dataframe')
 
 </div>
 
-<div class="cell code" execution_count="42"
+<div class="cell code"
 colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:107}"
 id="1_5JXsFgFIdg" outputId="cf45f62e-cd6e-4fed-9803-d2a30b4f4f95">
 
@@ -562,8 +628,15 @@ tdi.correlated_columns(df, return_type='json')
 
 <div class="cell markdown" id="AMpvo2RYS92c">
 
-Here return type is optional ('dataframe' or 'json'). Default: dataframe
+Here return type is optional ('dataframe' or 'json'). Default:
+dataframe. Above output defines that column A is correlated with column
+C and also shows the correlation value
 
 </div>
 
+<div class="cell code" id="6uyQ5pVcS5VG">
 
+``` python
+```
+
+</div>
