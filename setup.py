@@ -19,7 +19,7 @@ setuptools.setup(
     },
     install_requires=['requests'],
 
-    download_url="https://github.com/Tanvir223/TabularDataInvestigation/archive/refs/tags/0.0.7.tar.gz",
+    download_url="https://github.com/Tanvir223/TabularDataInvestigation/archive/refs/tags/0.0.8.tar.gz",
     keywords=["pypi", "TabularDataInvestigation", "TabularData", "Data-Manupulation", "Data-Preprocessing", "Data Cleaning","Machine Learning", "Artificial Intelligence", "Industry Data" , "Data Science"],
     classifiers=[
         'License :: OSI Approved :: MIT License',
